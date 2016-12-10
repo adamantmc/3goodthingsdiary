@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">"3 Good Things Diary"</string>
+    <string name="yes">"Yes"</string>
+    <string name="no">"No"</string>
+    <string name="add3goodthings">"Add 3 Good Things"</string>
+    <string name="doneEditView">"Done"</string>
+    <string name="cancelEditView">"Cancel"</string>
+    <string name="addEditView">"Add"</string>
+    <string name="editDayView">"Edit"</string>
+    <string name="deleteDayView">"Delete"</string>
+    <string name="nomoregoodthings">"No more good things for this day :("</string>
+    <string name="deleteMessage">"Are you sure you want to delete this day's entry?"</string>
+    <string name="firstgoodthing">"First good thing that happened to you this day"</string>
+    <string name="secondgoodthing">"Second good thing that happened to you this day"</string>
+    <string name="thirdgoodthing">"Third good thing that happened to you this day"</string>
+    <string name="nogoodthings">"Come on, at least one good thing happened to you that day. Think positive!"</string>
+    <string name="datealreadyexists">"You already have an entry for this date."</string>
+</resources>

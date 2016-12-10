@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/dateViewLayout"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/label_white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/day_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:focusable="false"
+                style="@style/dateTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/label_black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/thing1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/diaryTextView"
+                android:hint="@string/firstgoodthing"
+                android:inputType="textCapSentences|textMultiLine"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/label_black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/thing2_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/diaryTextView"
+                android:hint="@string/secondgoodthing"
+                android:inputType="textCapSentences|textMultiLine"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/label_black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/thing3_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/diaryTextView"
+                android:hint="@string/thirdgoodthing"
+                android:inputType="textCapSentences|textMultiLine"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonLayout">
+
+            <Button
+                android:id="@+id/doneDay_edit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/doneEditView"
+                style="@style/buttons"
+                android:drawableLeft="@drawable/done_white"
+                android:onClick="doneOrAddClicked"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/cancelDay_edit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/cancelEditView"
+                android:drawableRight="@drawable/cancel_white"
+                android:gravity="center"
+                android:onClick="cancelClicked"
+                style="@style/buttons"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">"Ημερολόγιο 3 Καλών Πραγμάτων"</string>
+    <string name="yes">"Ναι"</string>
+    <string name="no">"Όχι"</string>
+    <string name="add3goodthings">"Πρόσθεσε 3 καλά πράγματα"</string>
+    <string name="doneEditView">"Αποθήκευση"</string>
+    <string name="cancelEditView">"Άκυρο"</string>
+    <string name="addEditView">"Πρόσθεση"</string>
+    <string name="editDayView">"Επεξεργασία"</string>
+    <string name="deleteDayView">"Διαγραφή"</string>
+    <string name="nomoregoodthings">"Δεν είχε άλλα καλά πράγματα αυτή η μέρα :("</string>
+    <string name="deleteMessage">"Είστε σίγουροι ότι θέλετε να διαγράψετε αυτή την καταχώρηση;"</string>
+    <string name="firstgoodthing">"Πρώτο καλό πράγμα που σας συνέβη σήμερα"</string>
+    <string name="secondgoodthing">"Δεύτερο καλό πράγμα που σας συνέβη σήμερα"</string>
+    <string name="thirdgoodthing">"Τρίτο καλό πράγμα που σας συνέβη σήμερα"</string>
+    <string name="nogoodthings">"Σας συνέβη σίγουρα ένα καλό πράγμα αυτή τη μέρα. Σκεφτείτε θετικά!"</string>
+    <string name="datealreadyexists">"Υπάρχει ήδη μια καταχώρηση για αυτή την ημερομηνία."</string>
+</resources>

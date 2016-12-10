@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/dateViewLayout">
+
+            <TextView
+                android:id="@+id/day_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                style="@style/dateTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/thing1_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/diaryTextView" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider" />
+
+            <TextView
+                android:id="@+id/thing2_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/diaryTextView"
+                android:hint="@string/nomoregoodthings" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider" />
+
+            <TextView
+                android:id="@+id/thing3_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/diaryTextView"
+                android:hint="@string/nomoregoodthings" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonLayout">
+
+            <Button
+                android:id="@+id/editDay_view"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/editDayView"
+                android:onClick="onEditClick"
+                android:drawableLeft="@drawable/edit_white"
+                android:gravity="center"
+                style="@style/buttons"/>
+
+            <Button
+                android:id="@+id/deleteDay_view"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/deleteDayView"
+                android:drawableRight="@drawable/delete_white"
+                android:gravity="center"
+                android:onClick="onDeleteClick"
+                style="@style/buttons"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
